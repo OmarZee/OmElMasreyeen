@@ -1,6 +1,7 @@
 #include "patient.h"
+#include <QDebug>
 
 
-void Patient::login(){
+Patient:: Patient(){}
 
-}
+

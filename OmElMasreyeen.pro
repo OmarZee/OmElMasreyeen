@@ -16,11 +16,11 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     medicalrecord.cpp \
+    medicalrecords.cpp \
     nurse.cpp \
     patient.cpp \
     patientmanagementsystem.cpp \
     patientwindow.cpp \
-    register.cpp \
     registerwindow.cpp \
     scheduleappointment.cpp \
     staffmanagementsystem.cpp \
@@ -33,11 +33,11 @@ HEADERS += \
     doctor.h \
     mainwindow.h \
     medicalrecord.h \
+    medicalrecords.h \
     nurse.h \
     patient.h \
     patientmanagementsystem.h \
     patientwindow.h \
-    register.h \
     registerwindow.h \
     scheduleappointment.h \
     staffmanagementsystem.h \
@@ -45,7 +45,9 @@ HEADERS += \
 
 FORMS += \
     adminwindow.ui \
+    araf.ui \
     mainwindow.ui \
+    medicalrecords.ui \
     patientwindow.ui \
     registerwindow.ui \
     scheduleappointment.ui

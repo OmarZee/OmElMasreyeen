@@ -47,16 +47,15 @@ void registerWindow::on_registerButton_clicked()
         usernames.push_back(ui->lineEdit_username->text());
         passwords.push_back(ui->lineEdit_password->text());
 
-        QFile file("C:/Users/omars/OneDrive/Desktop/Uni/AUC/Semester 6/CS II/Lab/Extra Practice/OmElMasreyeen/Patients.txt");
+        QFile file("C:/Users/dalia/OneDrive/Desktop/Spring 2024 semester/CS2 lab/Mostashfa Om el Masreyeen/Patients.txt");
+        QTextStream out(&file);
 
         if (!file.open(QIODevice::Append | QIODevice::Text)){
             qDebug() << "Error: Unable to open file for writing!";
             qDebug() << "Error detail: " << file.errorString();
             return;
         }
-
-        QTextStream out(&file);
-        if (ui->Role->currentText() == "Patient"){
+        else if (ui->Role->currentText() == "Patient"){
             out << ui->lineEdit_username->text() << ", ";
 
             out << "\n";
