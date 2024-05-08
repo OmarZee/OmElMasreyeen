@@ -33,7 +33,7 @@ void MedicalRecords::on_pushButton_addRecord_clicked()
 
     Records_vector.push_back(*record);
 
-    QFile file("C:/Users/dalia/OneDrive/Desktop/Spring 2024 semester/CS2 lab/Mostashfa Om el Masreyeen/Records.txt");
+    QFile file("C:/Users/omars/OneDrive/Desktop/Uni/AUC/Semester 6/CS II/Lab/Extra Practice/OmElMasreyeen/Records.txt");
     QTextStream out(&file);
 
     if (!file.open(QIODevice::Append | QIODevice::Text)){

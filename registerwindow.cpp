@@ -46,8 +46,9 @@ void registerWindow::on_registerButton_clicked()
         role = ui->Role->currentText();
         usernames.push_back(ui->lineEdit_username->text());
         passwords.push_back(ui->lineEdit_password->text());
+        roles.push_back(ui->Role->currentText());
 
-        QFile filePatient("C:/Users/dalia/OneDrive/Desktop/Spring 2024 semester/CS2 lab/Mostashfa Om el Masreyeen/Patients.txt");
+        QFile filePatient("C:/Users/omars/OneDrive/Desktop/Uni/AUC/Semester 6/CS II/Lab/Extra Practice/OmElMasreyeen/Patients.txt");
         QTextStream out(&filePatient);
 
         if (!filePatient.open(QIODevice::Append | QIODevice::Text)){
@@ -67,7 +68,7 @@ void registerWindow::on_registerButton_clicked()
             qDebug() << "Patient name successfully added!";
         }
 
-        QFile fileNurse("C:/Users/dalia/OneDrive/Desktop/Spring 2024 semester/CS2 lab/Mostashfa Om el Masreyeen/Nurses.txt");
+        QFile fileNurse("C:/Users/omars/OneDrive/Desktop/Uni/AUC/Semester 6/CS II/Lab/Extra Practice/OmElMasreyeen/Nurses.txt");
         QTextStream out2(&fileNurse);
 
         if (!fileNurse.open(QIODevice::Append | QIODevice::Text)){
@@ -87,7 +88,7 @@ void registerWindow::on_registerButton_clicked()
             qDebug() << "Nurse name successfully added!";
         }
 
-        QFile fileDoctor("C:/Users/dalia/OneDrive/Desktop/Spring 2024 semester/CS2 lab/Mostashfa Om el Masreyeen/DoctorsRegistered.txt");
+        QFile fileDoctor("C:/Users/omars/OneDrive/Desktop/Uni/AUC/Semester 6/CS II/Lab/Extra Practice/OmElMasreyeen/DoctorsRegistered.txt");
         QTextStream out3(&fileDoctor);
 
         if (!fileDoctor.open(QIODevice::Append | QIODevice::Text)){

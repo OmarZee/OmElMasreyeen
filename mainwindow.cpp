@@ -27,17 +27,12 @@ void MainWindow::on_Login_button_clicked()
 {
    for(int i=0;i<100;i++)
     {
-        if((usernames[i] == ui->lineEdit_username->text()) && (passwords[i] == ui->lineEdit_password->text())){
+        if((usernames[i] == ui->lineEdit_username->text()) && (passwords[i] == ui->lineEdit_password->text()) && roles[i] == ui->Role->currentText()){
             ui->label_error->setVisible(false);
             if (ui->Role->currentText() == "Admin"){
                 AdminWindow* Admin_window = new AdminWindow();
                 Admin_window->show();
             }
-            hide();
-            break;
-        }
-        else if((usernames[i] == ui->lineEdit_username->text()) && (passwords[i] == ui->lineEdit_password->text())){
-            ui->label_error->setVisible(false);
             if (ui->Role->currentText() == "Patient"){
                 patientWindow* Patient_window = new patientWindow();
                 Patient_window->show();
