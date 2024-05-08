@@ -54,9 +54,9 @@ void AdminWindow::on_addButton_clicked() {
     doctor_arr[count] = *doctor;
     doctor->name = ui->lineEdit_doctorName->text();
     doctor->specialty = ui->lineEdit_specialty->text();
-    doctor->timings.push_back(ui->lineEdit_time_1->text());
-    doctor->timings.push_back(ui->lineEdit_time_2->text());
-    doctor->timings.push_back(ui->lineEdit_time_3->text());
+    // doctor->timings.push_back(ui->lineEdit_time_1->text());
+    // doctor->timings.push_back(ui->lineEdit_time_2->text());
+    // doctor->timings.push_back(ui->lineEdit_time_3->text());
     doctor_vector.push_back(*doctor);
 
     QFile file("C:/Users/dalia/OneDrive/Desktop/Spring 2024 semester/CS2 lab/Mostashfa Om el Masreyeen/Doctors.txt");
@@ -68,10 +68,10 @@ void AdminWindow::on_addButton_clicked() {
         return;
     }
     else {
-        out << doctor->name << ", " << doctor->specialty << ", ";
-        for(const auto& time : doctor->timings) {
-            out << time << ", ";
-        }
+        out << doctor->name << ": " << doctor->specialty;
+        // for(const auto& time : doctor->timings) {
+        //     out << time << ", ";
+        // }
         out << "\n";
 
         // Flush stream to ensure data is written
@@ -161,5 +161,30 @@ void AdminWindow::on_scheduleButton_clicked()
     hide();
     ScheduleAppointment* Schedule_window = new ScheduleAppointment();
     Schedule_window->show();
+}
+
+
+void AdminWindow::on_pushButton_deleteRecord_clicked()
+{
+    // QFile file("C:/Users/dalia/OneDrive/Desktop/Spring 2024 semester/CS2 lab/Mostashfa Om el Masreyeen/Records.txt");
+    // QTextStream in(&file);
+    // QTextStream out(&file);
+
+
+
+    // while (!in.atEnd()) {
+    //     QString line = in.readLine();
+    //     QStringList patientRecords = line.split("\n"); // Assuming CSV format
+    //     if (line != lineToDelete) {
+    //         line.append(line);
+    //     }
+    //     // Add each field to the ComboBox
+    //     for (const QString& record : patientRecords) {
+
+    //     }
+
+    // }
+
+    // file.close();
 }
 

@@ -41,6 +41,8 @@ private slots:
 
     void on_scheduleButton_clicked();
 
+    void on_pushButton_deleteRecord_clicked();
+
 private:
     Ui::AdminWindow *ui;
 };

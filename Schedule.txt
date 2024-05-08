@@ -1,3 +1,1 @@
-omar, 0x1b3920c5590, , , 512
-dalia, 0x15b5c191300, omar, batna, 1, 2, 3,, omar, batna, 1, 2, 3,, 512
-touby, 13994, omar, batna, 1, 2, 3,, omar, batna, 1, 2, 3,, 1
+

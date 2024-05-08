@@ -7,6 +7,10 @@
 #include "ui_adminwindow.h"
 #include "patientwindow.h"
 #include "ui_patientwindow.h"
+#include "doctorwindow.h"
+#include "ui_doctorwindow.h"
+#include "nursewindow.h"
+#include "ui_nursewindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -36,6 +40,14 @@ void MainWindow::on_Login_button_clicked()
             if (ui->Role->currentText() == "Patient"){
                 patientWindow* Patient_window = new patientWindow();
                 Patient_window->show();
+            }
+            if (ui->Role->currentText() == "Doctor"){
+                DoctorWindow* doctor_window = new DoctorWindow();
+                doctor_window->show();
+            }
+            if (ui->Role->currentText() == "Nurse"){
+                NurseWindow* nurse_window = new NurseWindow();
+                nurse_window->show();
             }
             hide();
             break;

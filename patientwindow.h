@@ -20,6 +20,8 @@ private slots:
 
     void on_chatButton_clicked();
 
+    void on_recordsButton_clicked();
+
 private:
     Ui::patientWindow *ui;
 };

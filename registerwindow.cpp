@@ -39,7 +39,7 @@ void registerWindow::on_registerButton_clicked()
 
     if (ui->lineEdit_password->text() != ui->lineEdit_re_pass->text()) {
         ui->label_pass_error->show();
-    } else     if (isUsernamePresent == true) {
+    } else if (isUsernamePresent == true) {
         ui->label_name_error->show();
     }
     else {
@@ -48,7 +48,7 @@ void registerWindow::on_registerButton_clicked()
         passwords.push_back(ui->lineEdit_password->text());
         roles.push_back(ui->Role->currentText());
 
-        QFile filePatient("C:/Users/omars/OneDrive/Desktop/Uni/AUC/Semester 6/CS II/Lab/Extra Practice/OmElMasreyeen/Patients.txt");
+        QFile filePatient("C:/Users/dalia/OneDrive/Desktop/Spring 2024 semester/CS2 lab/Mostashfa Om el Masreyeen/Patients.txt");
         QTextStream out(&filePatient);
 
         if (!filePatient.open(QIODevice::Append | QIODevice::Text)){
@@ -68,7 +68,7 @@ void registerWindow::on_registerButton_clicked()
             qDebug() << "Patient name successfully added!";
         }
 
-        QFile fileNurse("C:/Users/omars/OneDrive/Desktop/Uni/AUC/Semester 6/CS II/Lab/Extra Practice/OmElMasreyeen/Nurses.txt");
+        QFile fileNurse("C:/Users/dalia/OneDrive/Desktop/Spring 2024 semester/CS2 lab/Mostashfa Om el Masreyeen/Nurses.txt");
         QTextStream out2(&fileNurse);
 
         if (!fileNurse.open(QIODevice::Append | QIODevice::Text)){

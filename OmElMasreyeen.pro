@@ -14,17 +14,21 @@ SOURCES += \
     appointment.cpp \
     chatbox.cpp \
     doctor.cpp \
+    doctorwindow.cpp \
     main.cpp \
     mainwindow.cpp \
     medicalrecord.cpp \
     medicalrecords.cpp \
     nurse.cpp \
+    nursewindow.cpp \
     patient.cpp \
     patientmanagementsystem.cpp \
+    patientschedules.cpp \
     patientwindow.cpp \
     registerwindow.cpp \
     scheduleappointment.cpp \
     staffmanagementsystem.cpp \
+    testresults.cpp \
     user.cpp
 
 HEADERS += \
@@ -33,24 +37,31 @@ HEADERS += \
     appointment.h \
     chatbox.h \
     doctor.h \
+    doctorwindow.h \
     mainwindow.h \
     medicalrecord.h \
     medicalrecords.h \
     nurse.h \
+    nursewindow.h \
     patient.h \
     patientmanagementsystem.h \
+    patientschedules.h \
     patientwindow.h \
     registerwindow.h \
     scheduleappointment.h \
     staffmanagementsystem.h \
+    testresults.h \
     user.h
 
 FORMS += \
     adminwindow.ui \
     araf.ui \
     chatbox.ui \
+    doctorwindow.ui \
     mainwindow.ui \
     medicalrecords.ui \
+    nursewindow.ui \
+    patientschedules.ui \
     patientwindow.ui \
     registerwindow.ui \
     scheduleappointment.ui

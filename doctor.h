@@ -9,7 +9,7 @@ public:
     Doctor();
     QString name;
     QString specialty;
-    std::vector<QString> timings;
+    //std::vector<QString> timings;
 public slots:
 };
 
