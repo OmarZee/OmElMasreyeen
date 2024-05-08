@@ -2,6 +2,8 @@
 #include "ui_medicalrecords.h"
 #include "medicalrecord.h"
 #include <QFile>
+#include "adminwindow.h"
+#include "ui_adminwindow.h"
 
 std::vector<MedicalRecord> Records_vector;
 
@@ -40,7 +42,7 @@ void MedicalRecords::on_pushButton_addRecord_clicked()
         return;
     }
     else {
-        out << ui->lineEdit_patientName->text() << ", " << ui->lineEdit_diagnosis->text()
+        out << ui->lineEdit_patientName->text() << ", " << ui->lineEdit_patientNumber->text() << ", " << ui->lineEdit_diagnosis->text()
             << ", " << ui->lineEdit_prescription->text() << ", " << ui->lineEdit_treament->text();
 
         out << "\n";
@@ -51,5 +53,13 @@ void MedicalRecords::on_pushButton_addRecord_clicked()
 
         qDebug() << "Patient name successfully added!";
     }
+}
+
+
+void MedicalRecords::on_backButton_clicked()
+{
+    hide();
+    AdminWindow* Admin_window = new AdminWindow();
+    Admin_window->show();
 }
 

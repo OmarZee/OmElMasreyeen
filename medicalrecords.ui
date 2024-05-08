@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>338</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -144,10 +144,10 @@
   <widget class="QPushButton" name="pushButton_addRecord">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>268</y>
+     <x>150</x>
+     <y>300</y>
      <width>80</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
@@ -157,14 +157,50 @@
   <widget class="QPushButton" name="pushButton_ediRecord">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>267</y>
+     <x>260</x>
+     <y>300</y>
      <width>80</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>Edit Record</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>300</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_insurance">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>270</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Insurance:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_insurance">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>270</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
    </property>
   </widget>
  </widget>

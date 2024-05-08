@@ -19,7 +19,7 @@
      <x>30</x>
      <y>30</y>
      <width>561</width>
-     <height>151</height>
+     <height>181</height>
     </rect>
    </property>
    <property name="title">
@@ -28,7 +28,7 @@
    <widget class="QLineEdit" name="lineEdit_doctorName">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>170</x>
       <y>30</y>
       <width>113</width>
       <height>26</height>
@@ -38,7 +38,7 @@
    <widget class="QLineEdit" name="lineEdit_specialty">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>170</x>
       <y>70</y>
       <width>113</width>
       <height>26</height>
@@ -49,7 +49,7 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>110</y>
+      <y>140</y>
       <width>113</width>
       <height>26</height>
      </rect>
@@ -59,7 +59,7 @@
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>110</y>
+      <y>140</y>
       <width>93</width>
       <height>29</height>
      </rect>
@@ -72,7 +72,7 @@
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>110</y>
+      <y>140</y>
       <width>113</width>
       <height>26</height>
      </rect>
@@ -82,18 +82,57 @@
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>110</y>
+      <y>140</y>
       <width>113</width>
       <height>26</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_doctoName">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Doctor Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_specialty">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>70</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Specialty:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_times">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>110</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Available times:</string>
     </property>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_addPatient">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>190</y>
+     <x>20</x>
+     <y>230</y>
      <width>561</width>
      <height>151</height>
     </rect>
@@ -104,9 +143,9 @@
    <widget class="QLineEdit" name="lineEdit_patientname">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>100</x>
       <y>30</y>
-      <width>113</width>
+      <width>191</width>
       <height>26</height>
      </rect>
     </property>
@@ -114,9 +153,9 @@
    <widget class="QLineEdit" name="lineEdit_patientNumber">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>30</y>
-      <width>113</width>
+      <x>100</x>
+      <y>70</y>
+      <width>191</width>
       <height>26</height>
      </rect>
     </property>
@@ -125,8 +164,8 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>50</y>
-      <width>101</width>
+      <y>30</y>
+      <width>131</width>
       <height>21</height>
      </rect>
     </property>
@@ -138,7 +177,7 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>80</y>
+      <y>60</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -151,7 +190,7 @@
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>110</y>
+      <y>90</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -160,6 +199,58 @@
      <string>Edit Medical Record</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Patient Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_number">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>75</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Number:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="scheduleButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>400</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Schedule</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addAssignmentButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>400</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Assignment</string>
+   </property>
   </widget>
  </widget>
  <resources/>

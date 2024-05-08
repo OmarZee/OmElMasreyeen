@@ -15,6 +15,9 @@ public:
     explicit ScheduleAppointment(QWidget *parent = nullptr);
     ~ScheduleAppointment();
 
+private slots:
+    void on_addToScheduleButton_clicked();
+
 private:
     Ui::ScheduleAppointment *ui;
 };

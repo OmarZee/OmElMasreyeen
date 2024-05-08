@@ -12,6 +12,7 @@ SOURCES += \
     admin.cpp \
     adminwindow.cpp \
     appointment.cpp \
+    chatbox.cpp \
     doctor.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -30,6 +31,7 @@ HEADERS += \
     admin.h \
     adminwindow.h \
     appointment.h \
+    chatbox.h \
     doctor.h \
     mainwindow.h \
     medicalrecord.h \
@@ -46,6 +48,7 @@ HEADERS += \
 FORMS += \
     adminwindow.ui \
     araf.ui \
+    chatbox.ui \
     mainwindow.ui \
     medicalrecords.ui \
     patientwindow.ui \

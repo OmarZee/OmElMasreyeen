@@ -5,6 +5,8 @@
 #include "ui_registerwindow.h"
 #include "adminwindow.h"
 #include "ui_adminwindow.h"
+#include "patientwindow.h"
+#include "ui_patientwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -30,6 +32,15 @@ void MainWindow::on_Login_button_clicked()
             if (ui->Role->currentText() == "Admin"){
                 AdminWindow* Admin_window = new AdminWindow();
                 Admin_window->show();
+            }
+            hide();
+            break;
+        }
+        else if((usernames[i] == ui->lineEdit_username->text()) && (passwords[i] == ui->lineEdit_password->text())){
+            ui->label_error->setVisible(false);
+            if (ui->Role->currentText() == "Patient"){
+                patientWindow* Patient_window = new patientWindow();
+                Patient_window->show();
             }
             hide();
             break;

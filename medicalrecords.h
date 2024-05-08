@@ -22,6 +22,8 @@ public:
 private slots:
     void on_pushButton_addRecord_clicked();
 
+    void on_backButton_clicked();
+
 private:
     Ui::MedicalRecords *ui;
 };

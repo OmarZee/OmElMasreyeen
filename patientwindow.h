@@ -18,6 +18,8 @@ public:
 private slots:
     void on_scheduleButton_clicked();
 
+    void on_chatButton_clicked();
+
 private:
     Ui::patientWindow *ui;
 };

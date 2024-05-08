@@ -5,6 +5,8 @@
 #include "registerwindow.h"
 #include "ui_adminwindow.h"
 #include "ui_medicalrecords.h"
+#include "scheduleappointment.h"
+#include "ui_scheduleappointment.h"
 #include <QFile>
 #include <QTextStream>
 
@@ -151,5 +153,13 @@ void AdminWindow::on_pushButton_addRecord_clicked()
     hide();
     MedicalRecords* MedicalRecords_window = new MedicalRecords();
     MedicalRecords_window->show();
+}
+
+
+void AdminWindow::on_scheduleButton_clicked()
+{
+    hide();
+    ScheduleAppointment* Schedule_window = new ScheduleAppointment();
+    Schedule_window->show();
 }
 
